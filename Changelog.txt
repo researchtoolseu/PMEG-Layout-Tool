@@ -1,0 +1,42 @@
+Changelog
+This page lists all updates released for the PMEG Fenestration Layout Tool.
+
+-------------------------------------------------------------------------------
+
+*** April 2, 2026 - Version 2.12 (Configurable Reduction Tie Positions)
+
+NEW FEATURES
+- Script renamed to "pmeg_layout_tool_v2.12.py" for standardization
+- Configurable Reduction Tie Positions:
+  - Added support for defining reduction tie clock positions via metadata:
+    # tie_positions_clock: 5,6,7
+  - Default remains 4,6,8 if not specified
+  - Allows patient-specific customization of graft planning strategy
+  - Supports any valid clock positions (1–12)
+
+- Dynamic Tie Position Mapping:
+  - Clock positions are now internally converted to angular coordinates
+  - Enables flexible placement beyond fixed predefined locations
+
+- Validation of Tie Positions:
+  - Ensures exactly 3 positions are provided
+  - Validates values are within 1–12
+  - Prevents duplicate entries
+
+MINOR CHANGES
+- Refactored reduction tie drawing logic to remove hard-coded positions (4,6,8)
+- Improved modularity of tie guide generation for future extensions
+- Tie positions are now included in the generated REPORT output
+
+CLINICAL / PRACTICAL IMPROVEMENTS
+- Enables tailoring of reduction ties based on:
+  - Patient anatomy
+  - Graft configuration
+  - Operator preference
+- Improves intraoperative alignment flexibility
+
+NOTES
+- 6 o’clock position continues to be represented at both wrap edges of the unrolled graft
+- Backward compatibility maintained (older input files still work without modification)
+
+-------------------------------------------------------------------------------
