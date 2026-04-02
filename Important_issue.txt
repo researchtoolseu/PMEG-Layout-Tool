@@ -4,7 +4,7 @@
 3. At the bottom, look for:
       “This file came from another computer…”
 4. Check ✅ Unblock
-5. lick Apply
+5. Click Apply
 6. THEN extract
 
 -----------
