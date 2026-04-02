@@ -1,1 +1,15 @@
+👉 Before extracting the ZIP:
+1. Right-click the downloaded .zip
+2. Click Properties
+3. At the bottom, look for:
+      “This file came from another computer…”
+4. Check ✅ Unblock
+5. lick Apply
+6. THEN extract
 
+-----------
+
+🔁 If already extracted:
+You must unblock the EXE manually:
+- Right-click PMEG_Layout.exe → Properties → Unblock
+- Do the same for the _internal folder if needed
