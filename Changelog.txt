@@ -1,4 +1,4 @@
-Changelog
+Changelog 
 This page lists all updates released for the PMEG Fenestration Layout Tool.
 
 -------------------------------------------------------------------------------
