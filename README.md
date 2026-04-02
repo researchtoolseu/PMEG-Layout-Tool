@@ -1,264 +1,209 @@
 # PMEG Layout Tool
 
-This folder contains a clinically oriented, **true-scale (1:1)** digital planning tool for **Physician-Modified Endografts (PMEG)**.
+## Overview
 
-The tool generates printable templates that can be cut, rolled, and used directly on the back table to mark fenestrations accurately on the graft fabric.
+The **PMEG Layout Tool** is a clinically oriented, **true-scale (1:1)** digital planning tool for **Physician-Modified Endografts (PMEG)**.
 
-Everything is referenced to the **nominal graft diameter (device)** - **not** to the native aortic diameter.
+It generates printable templates that can be cut, rolled, and used directly on the back table to accurately mark fenestrations on the graft fabric.
 
----
+All calculations are based on the **nominal graft diameter (device)** — **not** the native aortic diameter.
 
-## Files
-
-* **pmeg_layout_mm_paper_v2.10_xlsx_last_output_folder.py**  
-  Main Python script
-
-* **PMEG_Input_Template_with_Run_Button.xlsx**  
-  Recommended Excel input template with structured metadata and run button
-
-* **targets_v2.10.csv** *(optional / legacy)*  
-  CSV input format
-
-* **README_v2.10.md**  
-  Documentation
+The tool is designed to support precision, reproducibility, and traceability in PMEG planning workflows.
 
 ---
 
-## What the script does
+## Main Features
 
-* Unrolls the graft circumference using the nominal graft diameter
-* Places fenestrations using angular (`theta_deg`) and longitudinal data
-* Produces **true-scale output (1 mm = 1 mm)** on A4/A3 paper
-* Carries the **physician_name** metadata through the workflow for traceability
+* True-scale output (**1 mm = 1 mm**) on A4/A3 paper
+* Graft unrolling based on nominal diameter (π·D)
+* Fenestration positioning using:
+
+  * angular position (`theta_deg`)
+  * longitudinal distances
+* Dual longitudinal measurement scales:
+
+  * center-to-center distances
+  * bottom-to-bottom distances
+* Anchor-based planning mode (recommended workflow)
+* Automatic conversion from bottom-based measurements to center coordinates
+* Reduction tie planning guides (**configurable per case**)
+* AP orientation markers (12–6 o’clock)
+* Anti-rotation check marker (✓)
+* Wrap edges clearly defined (true graft circumference)
+* Cut guides with configurable margins
+* Physician traceability via `physician_name` metadata
+* Automatic patient-specific folder creation with versioning
+* Report generation:
+
+  * TXT (human-readable)
+  * CSV (structured data for research/reuse)
 
 ---
 
-## Outputs
+## Input Format
 
-### Main PDF / PNG
+### Recommended: Excel (.xlsm)
+
+The Excel input file provides a structured and user-friendly interface.
+
+### Metadata fields
+
+* patient_name
+* patient_age
+* study_date
+* physician_name
+* graft_diam_mm
+* paper (A4 / A3)
+* orientation (portrait / landscape)
+* film_height_mm
+* tie_num_rows
+* tie_edge_pad_mm
+* tie_positions_clock *(NEW in v2.12)*
+* cut_margin_mm
+* ap_anchor
+* v_anchor
+* proximal_cover_mm
+* anchor
+
+### Target fields
+
+* name
+* theta_deg *(signed angle: right = positive, left = negative)*
+* fen_diam_mm
+* dist_from_zero_mm *(planning mode)*
+* y_mm *(optional / legacy mode)*
+* notes
+
+---
+
+### CSV (legacy support)
+
+Metadata lines are defined using `#`:
+
+```
+# patient_name: John Doe
+# patient_age: 68
+# study_date: 2026-02-01
+# physician_name: Dr Jane Smith
+# graft_diam_mm: 30
+# tie_positions_clock: 5,6,7
+```
+
+---
+
+## Output Files
+
+Each run generates a **patient-specific folder**:
+
+```
+Patients/
+  YYYY-MM-DD_PatientName/
+    v001_timestamp/
+    v002_timestamp/
+```
+
+### Main outputs
+
+* PDF (true-scale layout)
+* PNG image
 
 Includes:
 
 * millimeter grid
-* fenestration markers and labels
-* wrap-edge lines (true graft perimeter)
+* fenestration markers
+* wrap edges
 * cut guides
 * clock-face orientation
-* AP orientation markers (12 & 6 o'clock)
-* check marker (`✓`) to prevent 180-degree rotation
-* reduction-tie planning guides
-* 100 x 100 mm calibration square
-* dual longitudinal measurement scales:
-  * center-to-center
-  * bottom-to-bottom
+* AP markers
+* check marker (✓)
+* reduction tie guides
+* calibration square (100 × 100 mm)
+* measurement scales
 * patient metadata
-* **measurements by / physician_name** line when provided
 
-### Film PDF (transparent film / punch card)
+---
 
-Minimal geometry for back-table use:
+### Film output (transparent film)
 
-* graft boundaries
-* fenestrations
-* AP marker
-* reduction-tie guides
-* check marker (`✓`)
-* calibration square
-* optional small physician traceability line when `physician_name` is present
+* simplified geometry for back-table use
+* includes:
 
-### Report files
+  * graft boundaries
+  * fenestrations
+  * AP marker
+  * tie guides
+  * calibration square
 
-Generated automatically:
+---
 
-* `*_REPORT.txt` - human-readable summary
-* `*_REPORT.csv` - structured data for reuse
+### Reports
 
-Includes:
+* `*_REPORT.txt`
+* `*_REPORT.csv`
+
+Include:
 
 * all metadata
-* **physician_name**
+* physician_name
 * fenestration coordinates
-* center-to-center distances
-* bottom-to-bottom distances
-* anchor-to-target distances
+* distances:
 
-In packaged / executable use, the tool also writes a small sidecar file:
-
-* `last_output_folder.txt`
-
-This file is created alongside the executable and contains the **full path of the most recently created output folder**. It allows the Excel/VBA launcher to open the exact newly generated patient run folder after the app finishes.
+  * center-to-center
+  * bottom-to-bottom
+  * anchor-to-target
 
 ---
 
-## New traceability metadata
+### Additional files
 
-A new metadata field is supported:
-
-```text
-physician_name
-```
-
-Use it to record the physician who performed the measurements / planning for that case.
-
-Why this matters:
-
-* supports multi-physician departmental workflows
-* improves traceability and auditability
-* helps with inter-observer comparison and research datasets
-* ensures the responsible physician is visible in the generated outputs
-
-For backward compatibility, the script also accepts these aliases and normalizes them to `physician_name`:
-
-* `planner_name`
-* `measuring_physician`
-* `measured_by`
+* copy of input file (traceability)
+* `last_output_folder.txt` (used by Excel to open latest output)
 
 ---
 
-## Requirements
+## How to Run
 
 ### Python
 
-* Python **3.10 - 3.12**
-
-### Install dependencies
-
 ```bash
-python -m pip install matplotlib openpyxl
+python pmeg_layout_tool_v2.12.py --input PMEG_Input.xlsm
 ```
 
 (macOS: use `python3`)
 
 ---
 
-## Input methods
+### Executable (recommended for users)
 
-### Recommended: Excel (.xlsx)
-
-The Excel file contains structured fields for metadata and targets.
-
-Metadata fields include:
-
-* patient_name
-* patient_age
-* study_date
-* **physician_name**
-* graft_diam_mm
-* paper
-* orientation
-* film_height_mm
-* tie settings
-* cut margin (`cut_margin_mm`)
-* anchor settings
-
-Target fields include:
-
-* Name
-* Theta_deg
-* Fen_diam_mm
-* Dist_from_zero_mm
-* Y_mm
-* Notes
-
-### CSV (legacy support)
-
-Still supported for flexibility.
-
-Metadata lines at the top of the CSV can include:
-
-```text
-# patient_name: John Doe
-# patient_age: 68
-# study_date: 2026-02-01
-# physician_name: Dr Jane Smith
-# graft_diam_mm: 30
-```
+1. Open Excel input file
+2. Enable macros
+3. Click **Run PMEG**
+4. Confirm execution
+5. Wait until completion
+6. Output folder opens automatically
 
 ---
 
-## Core concept
+## Versioning
 
-### Planning mode (recommended workflow)
+The tool follows **version-based naming**:
 
-* **Anchor** = most proximal fenestration (usually CA)
-* **ZERO reference** = **bottom of anchor fenestration**
-* Input:
+* Script: `pmeg_layout_tool_v2.12.py`
+* Current version: **v2.12**
 
-```text
-dist_from_zero_mm = bottom(anchor) -> bottom(target)
-```
+Each version introduces incremental improvements and is documented separately.
 
-Example:
-
-```text
-CA -> SMA = 18 mm (bottom-to-bottom)
-```
-
-The script automatically converts bottom-to-bottom distances to centerline coordinates for plotting.
+Outputs are also versioned per patient (v001, v002, etc.), ensuring full traceability.
 
 ---
 
-## Measurement scales on output
+## Notes / Printing Instructions (critical)
 
-### Scale A - Center-to-center
+* Print at **100% / Actual Size**
+* Disable scaling / fit-to-page
+* Verify the **100 × 100 mm calibration square**
 
-Between adjacent fenestration centers
-
-### Scale B - Bottom-to-bottom
-
-Between adjacent fenestrations, plus:
-
-* TOP -> bottom of first fenestration
-
----
-
-## Automatic patient folder system
-
-If `--out` is **not** specified, outputs are stored as:
-
-```text
-/Patients/
-    YYYY-MM-DD_PatientName/
-        v001_timestamp/
-        v002_timestamp/
-```
-
-Each run creates a new version folder and stores:
-
-* PDFs
-* PNG
-* report files
-* original input file (traceability)
-
-Additionally, the app writes `last_output_folder.txt` next to the executable / script, containing the path of that exact run folder. This is useful when Excel should open the **specific newly created patient folder** instead of the generic `Patients` root.
-
----
-
-## How to run
-
-### Windows
-
-```bash
-cd C:\Path\To\PMEG
-python pmeg_layout_mm_paper_v2.10_xlsx_last_output_folder.py --input PMEG_Input_Template_with_Run_Button.xlsx
-```
-
-### macOS
-
-```bash
-cd /Users/yourname/Path/To/PMEG
-python3 pmeg_layout_mm_paper_v2.10_xlsx_last_output_folder.py --input PMEG_Input_Template_with_Run_Button.xlsx
-```
-
----
-
-## Printing (critical)
-
-* Print at **100% / Actual size**
-* Disable scaling
-* Verify the calibration square
-
-If incorrect -> **DO NOT USE**
+If calibration is incorrect → **DO NOT USE**
 
 ---
 
@@ -282,11 +227,28 @@ If incorrect -> **DO NOT USE**
 
 ---
 
+## Changelog
+
+A detailed version history is available in:
+
+```
+changelog.txt
+```
+
+---
+
 ## Disclaimer
 
 This tool supports planning and documentation only.
 
-Clinical judgment and responsibility remain entirely with the treating physician.
+Users and treating physicians are fully responsible for:
+
+* measurement accuracy
+* correct data entry
+* clinical interpretation
+* procedural execution
+
+The tool does not replace clinical judgment.
 
 ---
 
@@ -305,3 +267,7 @@ Tools:
 * ChatGPT (OpenAI)
 
 © 2026
+
+
+
+
