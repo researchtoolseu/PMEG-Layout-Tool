@@ -15,7 +15,7 @@ The tool is designed to improve:
 - Traceability in PMEG planning
 
 
-**Example of Main PMEG Layout Output**:
+*Example of Main PMEG Layout Output:*
 
 ![PMEG_LAYOUT](images/PMEG_LAYOUT.png)
 
