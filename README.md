@@ -38,6 +38,7 @@ The tool is designed to support precision, reproducibility, and traceability in 
   * TXT (human-readable)
   * CSV (structured data for research/reuse)
 
+![Template](images/template.png)
 ---
 
 ## Input Format
