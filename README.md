@@ -1,6 +1,6 @@
 # PMEG Layout Tool
 
-![Example Output](images/template.png)
+![PMEG_LAYOUT](images/PMEG_LAYOUT.png)
 
 ## Overview
 
@@ -55,8 +55,8 @@ This ensures accurate geometric representation of the graft surface.
 
 ---
 
-## Example Output
-<!-- Add images here --> <!-- Example: ![PMEG Layout Example](images/example1.png) -->
+## Example PMEG Layout Film Output
+![PMEG_LAYOUT_FILM](images/PMEG_LAYOUT_FILM.png)
 
 ---
 
@@ -91,7 +91,8 @@ This ensures accurate geometric representation of the graft surface.
 
 ### Command line (Advanced)
 
-`python pmeg_layout_tool_v2.13.py --input PMEG_Input.xlsm`
+`python pmeg_layout_tool_v2.13.py --input PMEG_Input.xlsm`.
+
 For full CLI options, andreaslazaris@hotmail.com
 
 ---
@@ -131,4 +132,4 @@ Tools:
 * OpenPyXL
 * ChatGPT (OpenAI)
 
----
+© 2026
