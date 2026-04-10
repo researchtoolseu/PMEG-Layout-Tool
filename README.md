@@ -38,8 +38,6 @@ The tool is designed to support precision, reproducibility, and traceability in 
   * TXT (human-readable)
   * CSV (structured data for research/reuse)
 
-![PMEG_LAYOUT](images/PMEG_LAYOUT.png)
-
 ---
 
 ## Input Format
@@ -75,6 +73,8 @@ The Excel input file provides a structured and user-friendly interface.
 * dist_from_zero_mm *(planning mode)*
 * y_mm *(optional / legacy mode)*
 * notes
+
+![INPUT_FORMAT](images/INPUT_FORMAT.png)
 
 ---
 
@@ -122,6 +122,8 @@ Includes:
 * calibration square (100 × 100 mm)
 * measurement scales
 * patient metadata
+
+![PMEG_LAYOUT](images/PMEG_LAYOUT.png)
 
 ---
 
