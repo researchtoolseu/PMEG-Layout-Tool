@@ -39,10 +39,10 @@ Requirements:
 
 All calculations are based on the:
 
-👉 Nominal graft diameter (device)
-❗ NOT the native aortic diameter
+- 👉 Nominal graft diameter (device)
+- ❗ NOT the native aortic diameter
 
-This ensures accurate geometric representation of the graft surface.
+This ensures an accurate geometric representation of the graft surface.
 
 ---
 
@@ -115,7 +115,11 @@ Clinical responsibility remains with the treating physician.
 ---
 
 ### Licence
-Not for commercial use. Intended for academic and educational purposes only (under CC BY-NC 4.0). See [LICENSE.md](LICENSE.md)
+This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0).
+
+Commercial use is not permitted without prior permission.
+
+See the [LICENSE](LICENSE) file for details.
 
 ---
 
