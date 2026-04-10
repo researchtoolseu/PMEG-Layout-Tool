@@ -4,7 +4,7 @@ To use this application, download the latest release.
 
 Windows users:
 The app can be used in two ways:
-- Install the standalone application by running the .exe installer
+- Install the standalone application by running the .exe installer (Recommended: Use installer)
 - Or download the .zip file and extract it manually
 
 Mac / Linux users:
