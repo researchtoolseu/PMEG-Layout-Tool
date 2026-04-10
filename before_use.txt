@@ -15,9 +15,20 @@ andreaslazaris@hotmail.com
 
 ⚠️ IMPORTANT (Windows security notice)
 
-Windows may block files downloaded from the internet. To avoid issues, please follow the steps below.
+Windows may block files downloaded from the internet. To avoid issues, please follow the instructions below.
 
-👉 BEFORE extracting the ZIP file:
+👉 IF YOU ARE USING THE INSTALLER (.exe):
+- Right-click the downloaded installer file
+- Select "Properties"
+- Check the box: ✅ Unblock (if present)
+- Click "Apply"
+- Then run the installer
+
+--------------------------------------------------
+
+👉 IF YOU ARE USING THE ZIP VERSION:
+
+BEFORE extracting the ZIP file:
 1. Right-click the downloaded .zip file
 2. Select "Properties"
 3. At the bottom of the window, look for:
