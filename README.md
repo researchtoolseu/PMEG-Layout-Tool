@@ -14,6 +14,9 @@ The tool is designed to improve:
 - Workflow standardization
 - Traceability in PMEG planning
 
+
+**Example of Main PMEG Layout Output**:
+
 ![PMEG_LAYOUT](images/PMEG_LAYOUT.png)
 
 ---
@@ -56,7 +59,7 @@ This ensures an accurate geometric representation of the graft surface.
 
 ---
 
-## Example PMEG Layout Film Output
+## Example of PMEG Layout Film Output
 ![PMEG_LAYOUT_FILM](images/PMEG_LAYOUT_FILM.png)
 
 ---
