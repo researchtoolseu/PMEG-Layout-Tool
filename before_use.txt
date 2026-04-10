@@ -1,0 +1,41 @@
+IMPORTANT NOTES BEFORE USE
+
+To use this application, download the latest release.
+
+Windows users:
+The app can be used in two ways:
+- Install the standalone application by running the .exe installer
+- Or download the .zip file and extract it manually
+
+Mac / Linux users:
+The tool can be executed via the Command Line using the Python script.
+Please contact us to obtain the latest .py version:
+andreaslazaris@hotmail.com
+
+
+⚠️ IMPORTANT (Windows security notice)
+
+Windows may block files downloaded from the internet. To avoid issues, please follow the steps below.
+
+👉 BEFORE extracting the ZIP file:
+1. Right-click the downloaded .zip file
+2. Select "Properties"
+3. At the bottom of the window, look for:
+      "This file came from another computer and might be blocked"
+4. Check the box: ✅ Unblock
+5. Click "Apply"
+6. THEN proceed with extraction
+
+--------------------------------------------------
+
+🔁 IF YOU HAVE ALREADY EXTRACTED THE FILES:
+
+You must manually unblock the executable:
+
+- Right-click "PMEG_Layout.exe" → Properties → check "Unblock" → Apply
+- If needed, repeat the process for files inside the "_internal" folder
+
+--------------------------------------------------
+
+NOTE:
+This step is required only once after downloading. It ensures the application runs correctly without Windows security restrictions.
