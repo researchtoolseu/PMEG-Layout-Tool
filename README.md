@@ -6,6 +6,8 @@ The **PMEG Layout Tool** is a clinically oriented, **true-scale (1:1)** digital 
 
 It generates printable templates that can be cut, rolled, and used directly on the back table to accurately mark fenestrations on the graft fabric.
 
+**Download the last .exe release and install it in a Windows environment**.
+
 All calculations are based on the **nominal graft diameter (device)** — **not** the native aortic diameter.
 
 The tool is designed to support precision, reproducibility, and traceability in PMEG planning workflows.
