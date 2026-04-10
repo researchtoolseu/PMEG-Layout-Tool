@@ -1,6 +1,5 @@
 # PMEG Layout Tool
 
-![PMEG_LAYOUT](images/PMEG_LAYOUT.png)
 
 ## Overview
 
@@ -14,6 +13,8 @@ The tool is designed to improve:
 - Reproducibility
 - Workflow standardization
 - Traceability in PMEG planning
+
+![PMEG_LAYOUT](images/PMEG_LAYOUT.png)
 
 ---
 
