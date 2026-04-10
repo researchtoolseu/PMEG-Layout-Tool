@@ -38,7 +38,8 @@ The tool is designed to support precision, reproducibility, and traceability in 
   * TXT (human-readable)
   * CSV (structured data for research/reuse)
 
-![Main_output](images/Main_output.png)
+![PMEG_LAYOUT](images/PMEG_LAYOUT.png)
+
 ---
 
 ## Input Format
@@ -134,6 +135,8 @@ Includes:
   * AP marker
   * tie guides
   * calibration square
+
+![PMEG_LAYOUT_FILM](images/PMEG_LAYOUT_FILM.png)
 
 ---
 
