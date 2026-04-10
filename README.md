@@ -272,6 +272,27 @@ Tools:
 * OpenPyXL
 * ChatGPT (OpenAI)
 
+---
+
+## Usage Notice
+
+The PMEG Layout Tool is provided for **academic, educational, and research purposes only**.
+
+Commercial use, redistribution, or integration into commercial products is **not permitted** without prior written permission from the authors.
+
+For licensing inquiries, please contact:
+andreaslazaris@hotmail.com
+
+---
+
+## License
+
+This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License (CC BY-NC 4.0)**.
+
+Commercial use is not permitted without prior permission.
+
+See the LICENSE file for details.
+
 © 2026
 
 
