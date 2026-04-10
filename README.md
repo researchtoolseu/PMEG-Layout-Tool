@@ -101,7 +101,7 @@ For full CLI options, andreaslazaris@hotmail.com
 ### Documentation
 For full instructions and technical details:
 
-👉 See `DETAILS.md`
+See [DETAILS.md](DETAILS.md)
 
 ---
 
@@ -115,7 +115,7 @@ Clinical responsibility remains with the treating physician.
 ---
 
 ### Licence
-Not for commercial use. Intended for academic and educational purposes only (under CC BY-NC 4.0).
+Not for commercial use. Intended for academic and educational purposes only (under CC BY-NC 4.0). See [LICENSE.md](LICENSE.md)
 
 ---
 
