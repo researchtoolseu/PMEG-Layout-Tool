@@ -51,9 +51,9 @@ This ensures an accurate geometric representation of the graft surface.
 - True-scale (1 mm = 1 mm) printable layouts (A4 / A3)
 - Unwrapped graft surface representation
 - Fenestration positioning based on:
- - Circumferential orientation (θ)
- - Longitudinal position (y)
- - Vessel diameter (d)
+  - Circumferential orientation (θ)
+  - Longitudinal position (y)
+  - Vessel diameter (d)
 
 ---
 
