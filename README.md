@@ -95,7 +95,7 @@ This ensures an accurate geometric representation of the graft surface.
 
 `python pmeg_layout_tool_v2.13.py --input PMEG_Input.xlsm`.
 
-For full CLI options, andreaslazaris@hotmail.com
+For full CLI options contact andreaslazaris@hotmail.com
 
 ---
 
@@ -137,5 +137,6 @@ Tools:
 * Matplotlib
 * OpenPyXL
 * ChatGPT (OpenAI)
+
 
 © 2026
