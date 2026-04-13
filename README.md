@@ -136,7 +136,6 @@ Tools:
 * Python
 * Matplotlib
 * OpenPyXL
-* ChatGPT (OpenAI)
 
 
 © 2026
