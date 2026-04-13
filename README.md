@@ -23,7 +23,7 @@ The tool is designed to improve:
 
 ## Quick Start
 
-👉 [Download the latest release (.exe)](https://github.com/andreaslazaris/PMEG-Layout-Tool/releases/latest), and install it on a Windows system
+👉 [Download the latest release](https://github.com/andreaslazaris/PMEG-Layout-Tool/releases/latest), and install it on a Windows system
 
 Requirements:
 - Microsoft Excel (required to run the input file)
