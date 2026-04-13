@@ -1,0 +1,16 @@
+IMPORTANT NOTES BEFORE USE
+
+To use this application, download the latest release.
+
+Install the application by running the .exe installer (RECOMMENDED)
+
+
+⚠️ IMPORTANT (Windows security notice)
+
+Windows may block files downloaded from the internet. To avoid issues, please follow the instructions below.
+
+- Right-click the downloaded installer file
+- Select "Properties"
+- Check the box: ✅ Unblock (if present)
+- Click "Apply"
+- Then run the installer

@@ -1,0 +1,96 @@
+Changelog
+This page lists all updates released for the PMEG Fenestration Layout Tool.
+
+-------------------------------------------------------------------------------
+
+*** April 11, 2026 – Version 2.14 (Film Boundary & Extended Distal Measurements)
+
+NEW FEATURES
+- Transparent film boundary visualization (MAIN output):
+  A horizontal reference line is now added at the level of film_height_mm, clearly indicating the bottom edge of the transparent film in both PDF and PNG outputs
+- Extended longitudinal measurements to film end:
+  The vertical measurement scales have been enhanced to include:
+  - Distance from the center of the last (most distal) fenestration to the bottom end of the transparent film
+  - Distance from the bottom edge of the last fenestration to the bottom end of the transparent film
+
+IMPROVEMENTS
+- Improved intraoperative usability by explicitly visualizing the available distal working length of the graft relative to the transparent film
+- Enhanced measurement completeness by ensuring that all distal clearances are quantified, not only inter-fenestration distances
+
+CLARIFICATIONS
+- proximal_cover_mm defines the distance from the top of the graft (transparent film) to the top of the anchor fenestration
+- The bottom of the anchor fenestration remains the ZERO reference point for all longitudinal measurements
+
+CLINICAL / PRACTICAL IMPROVEMENTS
+- Enables accurate planning of layouts with fenestrations located at the distal end of the graft, such as with a thoracic graft interfering distally with CA or SMA
+
+-------------------------------------------------------------------------------
+
+*** April 9, 2026 – Version 2.13 (User Documents Output Refactor)
+
+NEW FEATURES
+- Default output directory migrated to user Documents folder:
+  - Windows: Documents\PMEG Layout Tool\Patients\
+  - macOS/Linux: ~/Documents/PMEG Layout Tool/Patients/
+- Automatic creation of structured output directory if not present
+- Improved separation between application files and patient data
+
+IMPROVEMENTS
+- Eliminated writing to application directory (e.g., Program Files)
+- Prevents permission issues when running installed executable
+- Enhanced cross-platform compatibility (Windows / macOS / Linux)
+
+UPDATED RUNTIME BEHAVIOR
+- last_output_folder.txt is now written to:
+  - Documents directory (primary location)
+  - Input file directory (for Excel/VBA compatibility)
+- Removed dependency on executable directory for runtime files
+
+CLINICAL / PRACTICAL IMPROVEMENTS
+- Safer handling of patient data (no risk of loss during app updates)
+- More intuitive file access for clinicians
+- Better integration with institutional IT policies
+
+NOTES
+- Command-line --out option remains fully supported
+- Backward compatibility maintained for input formats
+
+-------------------------------------------------------------------------------
+
+*** April 2, 2026 - Version 2.12 (Configurable Reduction Tie Positions)
+
+NEW FEATURES
+- Script renamed to "pmeg_layout_tool_v2.12.py" for standardization
+- Configurable Reduction Tie Positions:
+  - Added support for defining reduction tie clock positions via metadata:
+    # tie_positions_clock: 5,6,7
+  - Default remains 4,6,8 if not specified
+  - Allows patient-specific customization of graft planning strategy
+  - Supports any valid clock positions (1–12)
+
+- Dynamic Tie Position Mapping:
+  - Clock positions are now internally converted to angular coordinates
+  - Enables flexible placement beyond fixed predefined locations
+
+- Validation of Tie Positions:
+  - Ensures exactly 3 positions are provided
+  - Validates values are within 1–12
+  - Prevents duplicate entries
+
+MINOR CHANGES
+- Refactored reduction tie drawing logic to remove hard-coded positions (4,6,8)
+- Improved modularity of tie guide generation for future extensions
+- Tie positions are now included in the generated REPORT output
+
+CLINICAL / PRACTICAL IMPROVEMENTS
+- Enables tailoring of reduction ties based on:
+  - Patient anatomy
+  - Graft configuration
+  - Operator preference
+- Improves intraoperative alignment flexibility
+
+NOTES
+- 6 o’clock position continues to be represented at both wrap edges of the unrolled graft
+- Backward compatibility maintained (older input files still work without modification)
+
+-------------------------------------------------------------------------------
