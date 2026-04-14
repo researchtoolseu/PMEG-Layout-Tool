@@ -1,5 +1,27 @@
 # PMEG Layout Tool
 
+## 📑 Table of Contents
+
+- [Overview](#overview)
+- [Main Features](#main-features)
+- [Input Format](#input-format)
+  - [Metadata fields](#metadata-fields)
+  - [Target fields](#target-fields)
+- [⚡ Quick Reference — Input Fields](#-quick-reference--input-fields)
+- [Output Files](#output-files)
+- [How to Run](#how-to-run)
+- [Versioning](#versioning)
+- [Notes / Printing Instructions (critical)](#notes--printing-instructions-critical)
+- [Safety features](#safety-features)
+- [Quick checklist](#quick-checklist)
+- [Changelog](#changelog)
+- [Disclaimer](#disclaimer)
+- [Credits](#credits)
+- [Usage Notice](#usage-notice)
+- [License](#license)
+
+---
+
 ## Overview
 
 The **PMEG Layout Tool** is a clinically oriented, **true-scale (1:1)** digital planning tool for **Physician-Modified Endografts (PMEG)**. 
