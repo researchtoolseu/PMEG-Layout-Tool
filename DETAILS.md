@@ -64,6 +64,8 @@ The tool is designed to support precision, reproducibility, and traceability in 
   * TXT (human-readable)
   * CSV (structured data for research/reuse)
 
+<br>
+[⬆️ Back to Table of Contents](#top)
 ---
 
 ## Input Format
@@ -194,7 +196,8 @@ Metadata lines are defined using `#`:
 # graft_diam_mm: 30
 # tie_positions_clock: 5,6,7
 ```
-
+<br>
+[⬆️ Back to Table of Contents](#top)
 ---
 
 ## Output Files
@@ -269,6 +272,8 @@ Include:
 * copy of input file (traceability)
 * `last_output_folder.txt` (used by Excel to open latest output)
 
+<br>
+[⬆️ Back to Table of Contents](#top)
 ---
 
 ## How to Run
@@ -292,6 +297,8 @@ python pmeg_layout_tool_v2.12.py --input PMEG_Input.xlsm
 5. Wait until completion
 6. Output folder opens automatically
 
+<br>
+[⬆️ Back to Table of Contents](#top)
 ---
 
 ## Versioning
@@ -305,6 +312,8 @@ Each version introduces incremental improvements and is documented separately.
 
 Outputs are also versioned per patient (v001, v002, etc.), ensuring full traceability.
 
+<br>
+[⬆️ Back to Table of Contents](#top)
 ---
 
 ## Notes / Printing Instructions (critical)
@@ -315,6 +324,8 @@ Outputs are also versioned per patient (v001, v002, etc.), ensuring full traceab
 
 If calibration is incorrect → **DO NOT USE**
 
+<br>
+[⬆️ Back to Table of Contents](#top)
 ---
 
 ## Safety features
@@ -324,6 +335,8 @@ If calibration is incorrect → **DO NOT USE**
 * Wrap edges clearly marked
 * Warnings for out-of-bounds fenestrations or incorrect geometry
 
+<br>
+[⬆️ Back to Table of Contents](#top)
 ---
 
 ## Quick checklist
@@ -335,6 +348,8 @@ If calibration is incorrect → **DO NOT USE**
 * Calibration square verified
 * No scaling in printing
 
+<br>
+[⬆️ Back to Table of Contents](#top)
 ---
 
 ## Changelog
@@ -345,6 +360,8 @@ A detailed version history is available in:
 changelog.txt
 ```
 
+<br>
+[⬆️ Back to Table of Contents](#top)
 ---
 
 ## Disclaimer
@@ -360,6 +377,8 @@ Users and treating physicians are fully responsible for:
 
 The tool does not replace clinical judgment.
 
+<br>
+[⬆️ Back to Table of Contents](#top)
 ---
 
 ## Credits
@@ -376,6 +395,8 @@ Tools:
 * OpenPyXL
 * ChatGPT (OpenAI)
 
+<br>
+[⬆️ Back to Table of Contents](#top)
 ---
 
 ## Usage Notice
@@ -387,6 +408,8 @@ Commercial use, redistribution, or integration into commercial products is **not
 For licensing inquiries, please contact:
 andreaslazaris@hotmail.com
 
+<br>
+[⬆️ Back to Table of Contents](#top)
 ---
 
 ## License
@@ -396,7 +419,11 @@ This project is licensed under the **Creative Commons Attribution-NonCommercial 
 Commercial use is not permitted without prior permission.
 
 See the LICENSE file for details.
+<br>
+[⬆️ Back to Table of Contents](#top)
 
+
+<br>
 © 2026
 
 
