@@ -309,7 +309,7 @@ python pmeg_layout_tool_v2.12.py --input PMEG_Input.xlsm
 The tool follows **version-based naming**:
 
 * Script: `pmeg_layout_tool_v2.12.py`
-* Current version: **v2.12**
+* Current version: **v2.14**
 
 Each version introduces incremental improvements and is documented separately.
 
@@ -380,8 +380,6 @@ Users and treating physicians are fully responsible for:
 
 The tool does not replace clinical judgment.
 
-[⬆️ Top](#top)
-
 ---
 
 ## Credits
@@ -398,8 +396,6 @@ Tools:
 * OpenPyXL
 * ChatGPT (OpenAI)
 
-[⬆️ Top](#top)
-
 ---
 
 ## Usage Notice
@@ -411,8 +407,6 @@ Commercial use, redistribution, or integration into commercial products is **not
 For licensing inquiries, please contact:
 andreaslazaris@hotmail.com
 
-[⬆️ Top](#top)
-
 ---
 
 ## License
@@ -423,6 +417,7 @@ Commercial use is not permitted without prior permission.
 
 See the LICENSE file for details.
 
+<br>
 
 [⬆️ Top](#top)
 
