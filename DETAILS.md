@@ -35,7 +35,7 @@ The tool is designed to support precision, reproducibility, and traceability in 
 
 <br>
 
-[⬆️ Back to Table of Contents](#top)
+[⬆️ Top](#top)
 
 ---
 
@@ -332,6 +332,10 @@ Outputs are also versioned per patient (v001, v002, etc.), ensuring full traceab
 
 If calibration is incorrect → **DO NOT USE**
 
+<br>
+
+[⬆️ Top](#top)
+
 ---
 
 ## Safety features
@@ -361,6 +365,10 @@ A detailed version history is available in:
 ```
 changelog.txt
 ```
+
+<br>
+
+[⬆️ Top](#top)
 
 ---
 
@@ -392,6 +400,10 @@ Tools:
 * Matplotlib
 * OpenPyXL
 * ChatGPT (OpenAI)
+
+<br>
+
+[⬆️ Top](#top)
 
 ---
 
