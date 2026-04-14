@@ -1,5 +1,6 @@
 # PMEG Layout Tool
 
+<a id="top"></a>
 ## 📑 Table of Contents
 
 - [Overview](#overview)
@@ -31,6 +32,9 @@ It generates printable templates that can be cut, rolled, and used directly on t
 All calculations are based on the **nominal graft diameter (device)** — **not** the native aortic diameter.
 
 The tool is designed to support precision, reproducibility, and traceability in PMEG planning workflows.
+
+<br>
+[⬆️ Back to Table of Contents](#top)
 
 ---
 
