@@ -1,7 +1,24 @@
-# PMEG Layout Tool
+<p align="center">
+  <img src="images/Picture2.ico" width="120">
+</p>
 
-<!-- Local image (stored in repo) -->
-![Project Logo](images/Picture2.ico)
+<h1 align="center">PMEG Layout Tool</h1>
+
+<p align="center">
+  True-scale (1:1) planning tool for Physician-Modified Endografts (PMEG)
+</p>
+
+<p align="center">
+  <b>Standardize • Visualize • Execute</b>
+</p>
+
+<p align="center">
+  <a href="https://github.com/andreaslazaris/PMEG-Layout-Tool/releases/latest">
+    ⬇️ Download Latest Release
+  </a>
+</p>
+
+
 
 ## Overview
 
