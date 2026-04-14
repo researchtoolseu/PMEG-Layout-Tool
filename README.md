@@ -1,7 +1,7 @@
 # PMEG Layout Tool
 
 <!-- Local image (stored in repo) -->
-![Project Logo](images/logo.png)
+![Project Logo](images/Picture2.ico)
 
 ## Overview
 
