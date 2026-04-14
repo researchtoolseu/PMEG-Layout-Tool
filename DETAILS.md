@@ -401,10 +401,6 @@ Tools:
 * OpenPyXL
 * ChatGPT (OpenAI)
 
-<br>
-
-[⬆️ Top](#top)
-
 ---
 
 ## Usage Notice
