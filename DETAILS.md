@@ -65,7 +65,7 @@ The tool is designed to support precision, reproducibility, and traceability in 
   * CSV (structured data for research/reuse)
 
 
-[⬆️ Back to Table of Contents](#top)
+[⬆️ Top](#top)
 
 ---
 
@@ -198,7 +198,7 @@ Metadata lines are defined using `#`:
 # tie_positions_clock: 5,6,7
 ```
 
-[⬆️ Back to Table of Contents](#top)
+[⬆️ Top](#top)
 
 ---
 
@@ -275,7 +275,7 @@ Include:
 * `last_output_folder.txt` (used by Excel to open latest output)
 
 
-[⬆️ Back](#top)
+[⬆️ Top](#top)
 
 ---
 
@@ -300,8 +300,7 @@ python pmeg_layout_tool_v2.12.py --input PMEG_Input.xlsm
 5. Wait until completion
 6. Output folder opens automatically
 
-
-[⬆️ Back to Table of Contents](#top)
+[⬆️ Top](#top)
 
 ---
 
@@ -316,6 +315,8 @@ Each version introduces incremental improvements and is documented separately.
 
 Outputs are also versioned per patient (v001, v002, etc.), ensuring full traceability.
 
+[⬆️ Top](#top)
+
 ---
 
 ## Notes / Printing Instructions (critical)
@@ -326,6 +327,8 @@ Outputs are also versioned per patient (v001, v002, etc.), ensuring full traceab
 
 If calibration is incorrect → **DO NOT USE**
 
+[⬆️ Top](#top)
+
 ---
 
 ## Safety features
@@ -334,6 +337,8 @@ If calibration is incorrect → **DO NOT USE**
 * Check marker (`✓`) to prevent rotation errors
 * Wrap edges clearly marked
 * Warnings for out-of-bounds fenestrations or incorrect geometry
+
+[⬆️ Top](#top)
 
 ---
 
@@ -346,6 +351,8 @@ If calibration is incorrect → **DO NOT USE**
 * Calibration square verified
 * No scaling in printing
 
+[⬆️ Top](#top)
+
 ---
 
 ## Changelog
@@ -355,6 +362,8 @@ A detailed version history is available in:
 ```
 changelog.txt
 ```
+
+[⬆️ Top](#top)
 
 ---
 
@@ -370,6 +379,8 @@ Users and treating physicians are fully responsible for:
 * procedural execution
 
 The tool does not replace clinical judgment.
+
+[⬆️ Top](#top)
 
 ---
 
@@ -387,6 +398,8 @@ Tools:
 * OpenPyXL
 * ChatGPT (OpenAI)
 
+[⬆️ Top](#top)
+
 ---
 
 ## Usage Notice
@@ -397,6 +410,8 @@ Commercial use, redistribution, or integration into commercial products is **not
 
 For licensing inquiries, please contact:
 andreaslazaris@hotmail.com
+
+[⬆️ Top](#top)
 
 ---
 
@@ -409,7 +424,7 @@ Commercial use is not permitted without prior permission.
 See the LICENSE file for details.
 
 
-[⬆️ Back to Table of Contents](#top)
+[⬆️ Top](#top)
 
 
 <br>
