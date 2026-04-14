@@ -1,4 +1,4 @@
-# PMEG Layout Tool
+# PMEG Layout Tool - Details
 
 <a id="top"></a>
 ## 📑 Table of Contents
