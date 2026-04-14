@@ -275,7 +275,8 @@ Include:
 * `last_output_folder.txt` (used by Excel to open latest output)
 
 
-[⬆️ Back to Table of Contents](#top)
+[⬆️ Back](#top)
+
 ---
 
 ## How to Run
