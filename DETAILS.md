@@ -33,7 +33,7 @@ All calculations are based on the **nominal graft diameter (device)** — **not*
 
 The tool is designed to support precision, reproducibility, and traceability in PMEG planning workflows.
 
-<br>
+
 [⬆️ Back to Table of Contents](#top)
 
 ---
