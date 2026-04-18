@@ -1,10 +1,86 @@
 Changelog
 This page lists all updates released for the PMEG Fenestration Layout Tool.
 
+
+-------------------------------------------------------------------------------
+
+*** April 19, 2026 - Version 2.18 (Dual-report system & clinical report refinement)
+
+
+NEW FEATURES
+- Introduced dual-report output:
+  - PMEG_LAYOUT_REPORT.txt → Clinical report (user-friendly)
+  - PMEG_LAYOUT_REPORT_TECHNICAL.txt → Technical report (full metadata & internal values)
+  - PMEG_LAYOUT_REPORT.csv → Structured machine-readable export
+
+- Clinical report redesigned for improved readability:
+  - Structured sections (Patient, Planning Parameters, Version Notes, Fenestrations, Distances)
+  - Removal of internal/debug metadata from main report
+  - Cleaner terminology and formatting
+
+- Refined Fenestration Summary (clinical report):
+  - Aligned tabular layout
+  - Improved column naming (Angle, Diameter, y position, x position)
+  - Consistent rounding and spacing
+  - Optimized for quick clinical interpretation
+
+- Version notes integration improved:
+  - Displayed once in a dedicated section (no duplication)
+  - Included in both TXT and CSV outputs (clean handling)
+
+TECHNICAL IMPROVEMENTS
+- Separation of report logic into clinical vs technical outputs
+- Full metadata preserved in technical report
+- Cleaner CSV export structure with explicit version_notes handling
+
+CLINICAL / PRACTICAL IMPROVEMENTS
+- Significantly improved report readability for clinical use
+- Better suitability for:
+  - case documentation
+  - teaching material
+  - scientific communication
+- Maintains full traceability through technical report
+
+NOTES
+- No changes to core PMEG geometry or plotting logic
+- Fully backward compatible with previous input formats
+
+-------------------------------------------------------------------------------
+
+*** April 18, 2026 - Version 2.17 (Version notes integration & workflow enhancement)
+
+
+NEW FEATURES
+- Added version-specific notes (version_notes)
+  - Supports multiline free-text input (Excel / CSV)
+  - Designed to capture operator planning thoughts per case version
+  - Separate from fenestration-level notes
+
+- Added “Version notes” box in MAIN PDF
+  - Wrapped, formatted text block
+  - Positioned separately from fenestration table
+  - Handles line breaks and long text (with truncation if needed)
+
+- Included version notes in reports
+  - Exported to:
+    - PMEG_LAYOUT_REPORT.txt
+    - PMEG_LAYOUT_REPORT.csv
+  - Preserved as part of case-version documentation
+
+EXCEL WORKFLOW IMPROVEMENTS
+- Multiline input supported in PMEG_Input.xlsm (Alt+Enter)
+- Automatic clearing of version notes after successful run
+  - Prevents carry-over between runs
+  - Maintains clean input for iterative planning
+
+CLINICAL / PRACTICAL IMPROVEMENTS
+- Adds traceable decision context per version
+- Improves reproducibility and auditability
+- Connects geometric planning with clinical reasoning
+
 -------------------------------------------------------------------------------
 
 *** April 17, 2026 - Version 2.16 (Print Safety and Film Identification Improvements)
-
 
 CLINICAL / PRACTICAL IMPROVEMENTS
 - Added a print-safety notice inside the 100 mm calibration square in the MAIN PDF layout:
@@ -18,11 +94,9 @@ WORKFLOW / SAFETY BENEFITS
 - Improves traceability of printed transparent layouts
 - Reduces wrong-patient / wrong-version handling risk in multi-case environments
 
-
 -------------------------------------------------------------------------------
 
 *** April 14, 2026 - Version 2.15 (Film Output & Print Safety Improvements)
-
 
 NEW FEATURES
 - Added print instruction header on transparent film:
