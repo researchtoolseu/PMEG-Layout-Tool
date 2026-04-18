@@ -3,6 +3,53 @@ This page lists all updates released for the PMEG Fenestration Layout Tool.
 
 -------------------------------------------------------------------------------
 
+*** April 17, 2026 - Version 2.16 (Print Safety and Film Identification Improvements)
+
+
+CLINICAL / PRACTICAL IMPROVEMENTS
+- Added a print-safety notice inside the 100 mm calibration square in the MAIN PDF layout:
+  "PRINT AT 100% (ACTUAL SIZE) / CHECK SCALE BEFORE USE"
+- Added vertical patient identification text in the transparent FILM PDF cut margins, including:
+  patient name, age, study date, and instance ID (patient's version and ID)
+- Patient identification is printed on both cut margins of the FILM layout to reduce the risk of confusion when multiple patient layouts are present or when the film is rolled
+
+WORKFLOW / SAFETY BENEFITS
+- Reinforces mandatory scale verification before use
+- Improves traceability of printed transparent layouts
+- Reduces wrong-patient / wrong-version handling risk in multi-case environments
+
+
+-------------------------------------------------------------------------------
+
+*** April 14, 2026 - Version 2.15 (Film Output & Print Safety Improvements)
+
+
+NEW FEATURES
+- Added print instruction header on transparent film:
+  PRINT AT 100% (ACTUAL SIZE)
+- Added scale reminder inside calibration square:
+  CHECK SCALE BEFORE USE
+- Introduced metadata control:
+  # show_film_print_notice: yes/no (default: yes)
+
+IMPROVEMENTS
+- Film layout position preserved (no vertical displacement)
+- Instructions moved outside usable film area
+- Calibration label updated to: SCALE 100 mm
+- Cleaner design using capital letters (reduced ink usage)
+
+CLINICAL / PRACTICAL IMPROVEMENTS
+- Reduces risk of incorrect print scaling
+- Promotes consistent calibration verification
+- Maintains full usability of the transparent film
+
+TECHNICAL NOTES
+- Fully backward compatible with existing CSV and XLSM inputs
+- Metadata parsing extended to include show_film_print_notice
+- Minor linter warnings remain but do not affect functionality
+
+-------------------------------------------------------------------------------
+
 *** April 11, 2026 – Version 2.14 (Film Boundary & Extended Distal Measurements)
 
 NEW FEATURES
