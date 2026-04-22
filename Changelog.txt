@@ -1,6 +1,31 @@
 Changelog
 This page lists all updates released for the PMEG Fenestration Layout Tool.
 
+-------------------------------------------------------------------------------
+
+*** April 22, 2026 - Version 2.19 (Enhanced Longitudinal Scale Completeness)
+
+
+NEW FEATURES
+- Added proximal center-to-center distance
+  • The center-to-center scale now includes:
+    Top of graft (y = 0) → center of the most proximal fenestration
+  • Completes the longitudinal reference system for improved interpretability
+
+IMPROVEMENTS
+- Symmetry between longitudinal scales
+  • Center-to-center and bottom-to-bottom scales now follow the same structure:
+    - Proximal segment
+    - Intermediate (fenestration-to-fenestration) segments
+    - Distal segment to film end
+
+- Improved visual consistency
+  • Better alignment of dimension annotations across the full graft length
+
+CLINICAL / PRACTICAL IMPACT
+- Facilitates rapid understanding of absolute fenestration positioning
+- Reduces need for manual estimation of proximal distances
+- Improves intraoperative orientation and planning confidence
 
 -------------------------------------------------------------------------------
 
