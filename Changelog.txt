@@ -1,6 +1,114 @@
 Changelog
 This page lists all updates released for the PMEG Fenestration Layout Tool.
 
+
+-------------------------------------------------------------------------------
+
+*** May 31, 2026 - Version 2.23 (Adding zero reducing ties)
+
+NEW FEATURES
+- Added support for `tie_num_rows = 0`.
+- When `tie_num_rows` is set to `0`, no reducing tie guide lines or dots are drawn.
+- `tie_num_rows = 0` overrides any value entered in `tie_positions_clock`.
+- Added support for “none-style” values in `tie_positions_clock`, including:
+  - `None`
+  - `No`
+  - `Off`
+  - `0`
+- Improved Excel input flexibility for cases where no reducing ties are planned.
+- Clinical/report output now displays tie positions as `None` when reducing ties are disabled.
+
+-------------------------------------------------------------------------------
+
+*** May 30, 2026 - Version 2.22 
+
+NEW FEATURES
+- Updated accepted/user-facing values for `orientation`:
+  - `Portrait`
+  - `Landscape`
+- Updated accepted/user-facing values for `circumferential_mode`:
+  - `Nominal`
+  - `Constrained`
+- Maintained backward compatibility with previous lowercase values:
+  - `portrait`
+  - `landscape`
+  - `nominal`
+  - `constrained`
+- Modified `tie_positions_clock` behavior:
+  - blank cell / blank metadata value now disables reducing tie guide drawing.
+- Allowed generation of layouts without reducing tie position guides.
+
+-------------------------------------------------------------------------------
+
+*** May 30, 2026 - Version 2.21 (Circumeferential mode)
+
+MAJOR UPDATE
+
+NEW FEATURES
+- Added constrained circumferential mapping mode.
+- Introduced `circumferential_mode` metadata option:
+  - `nominal`
+  - `constrained`
+- Added support for `native_aorta_diam_mm` / equivalent mapping diameter metadata in constrained mode.
+- In constrained mode, fenestration x-positions are calculated using the native aortic diameter.
+- Graft wrap edges, cut lines, and nominal graft perimeter remain based on the nominal graft diameter.
+- Added reporting of circumferential mode and θ→x mapping diameter in layout tables and generated reports.
+- Preserved standard nominal graft-based mapping as the default behavior.
+
+
+-------------------------------------------------------------------------------
+
+*** April 27, 2026 - Version 2.20 (Planning Mode Logic & XLSM Integration)
+
+
+MAJOR UPDATE
+
+NEW FEATURES
+- Introduced explicit metadata field: planning_mode (Planning / Legacy)
+- Dual-mode workflow supported within the same file:
+  - Planning mode → uses dist_from_zero_mm + proximal_cover_mm + anchor
+  - Legacy mode → uses y_mm
+- Script now ignores inactive input fields instead of requiring them to be empty
+  (allows safe coexistence of both planning approaches in the same dataset)
+
+VALIDATION & SAFETY IMPROVEMENTS
+- Mode-dependent validation:
+  - Planning mode requires dist_from_zero_mm and proximal_cover_mm
+  - Legacy mode requires y_mm
+- Removed strict requirement for unused fields to be blank (reduces user error risk)
+- Improved error messages for missing required inputs
+
+REPORTING IMPROVEMENTS
+- Added planning mode display in:
+  - Clinical TXT report
+  - Technical TXT report
+  - Main PDF (Fenestrations table as “Mode: Planning / Legacy”)
+- Enhances traceability and reproducibility of planning approach
+
+XLSM TEMPLATE UPDATES (v2.20)
+- Added new metadata field: planning_mode
+- Added Definition column (clear, one-line description of each metadata field)
+- Added Guidance column for user instructions
+- Improved structure: Definition | Metadata | Value | Guidance
+- Introduced visual logic (grey-out concept) for inactive fields depending on planning mode
+- Updated top instruction line for clearer workflow guidance
+
+USABILITY IMPROVEMENTS
+- Allows users to switch between Planning and Legacy modes without deleting previous data
+- Enables parallel storage of both measurement strategies for comparison and verification
+- Reduced risk of data loss and re-entry errors
+
+INTERNAL CHANGES
+- Refactored planning-mode detection logic to support explicit mode selection
+- Improved metadata handling and normalization
+- Minor stability and robustness improvements
+
+NOTES
+- Greyed-out fields in XLSM indicate inactive inputs but are not required to be empty
+- Planning mode is recommended for new cases; Legacy mode maintained for compatibility
+
+
+
 -------------------------------------------------------------------------------
 
 *** April 22, 2026 - Version 2.19 (Enhanced Longitudinal Scale Completeness)
