@@ -627,7 +627,6 @@ This pointer is used by the Excel/VBA workflow to open the most recent output fo
 _Example of main PDF layout_
 
 
-_Example of main PDF layout_
 ![INPUT_FORMAT](images/Main_layout.png)
 
 
