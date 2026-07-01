@@ -169,9 +169,9 @@ The workbook also includes lists/dropdowns for common values such as page size, 
 
 
 
-![INPUT_FORMAT](images/Input_file.png)
-<img src="images/Input_file.png" alt="INPUT_FORMAT" style="border: 1px solid #000; padding: 4px;">
-_Example of PMEG_Input format_
+<!-- ![INPUT_FORMAT](images/Input_file.png) -->
+<img src="images/Input_file.png" alt="PMEG Input Format" style="border: 1px solid #000; padding: 4px;">
+_Example of PMEG Input Format_
 
 [⬆️ Top](#top)
 
@@ -474,9 +474,9 @@ Note: if the CA scallop is not centered at 12 o'clock, use the measured `Theta_d
 
 
 
-![INPUT_FORMAT](images/Scallop_layout.png)
-
-_Example of tranparent film PDF tempate with scallop_
+<!-- ![INPUT_FORMAT](images/Scallop_layout.png) -->
+<img src="images/Scallop_layout.png" alt="Tranparent Film PDF Layout with Scallop" style="border: 1px solid #000; padding: 4px;">
+_Example of Tranparent Film PDF Layout with Scallop_
 
 [⬆️ Top](#top)
 
@@ -627,15 +627,15 @@ This pointer is used by the Excel/VBA workflow to open the most recent output fo
 
 
 
-![INPUT_FORMAT](images/Main_layout.png)
+<!-- ![INPUT_FORMAT](images/Main_layout.png) -->
+<img src="images/Main_layout.png" alt="Main PDF Layout" style="border: 1px solid #000; padding: 4px;">
+_Example of Main PDF Layout_
 
-_Example of main PDF layout_
 
 
-
-![INPUT_FORMAT](images/Transparent_layout.png)
-
-_Example of transparent film PDF template_
+<!-- ![INPUT_FORMAT](images/Transparent_layout.png) -->
+<img src="images/Transparent_layout.png" alt="Transparent Film PDF Layout" style="border: 1px solid #000; padding: 4px;">
+_Example of Transparent Film PDF Layout_
 
 
 [⬆️ Top](#top)
