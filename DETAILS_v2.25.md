@@ -166,12 +166,12 @@ The workbook also includes lists/dropdowns for common values such as page size, 
 | `anchor` | Planning mode only | Target vessel used as the longitudinal zero reference. Usually the most proximal fenestration. | `CA` or `SMA` |
 | `version_notes` | No | Free-text notes for the current planning version. | `CA shifted 2 mm distal` |
 
---
+
 
 _Example of PMEG_Input format_
-![INPUT_FORMAT](images/input_file.png)
+![INPUT_FORMAT](images/Input_file.png)
 
---
+
 
 [⬆️ Top](#top)
 
@@ -471,12 +471,12 @@ Example:
 
 Note: if the CA scallop is not centered at 12 o'clock, use the measured `Theta_deg` rather than `0`.
 
---
+
 
 _Example of tranparent film PDF tempate with scallop_
 ![INPUT_FORMAT](images/Scallop_layout.png)
 
---
+
 
 [⬆️ Top](#top)
 
@@ -622,19 +622,17 @@ last_output_folder.txt
 
 This pointer is used by the Excel/VBA workflow to open the most recent output folder.
 
---
+
 
 _Example of main PDF layout_
 ![INPUT_FORMAT](images/Main_layout.png)
 
---
 
---
 
 _Example of transparent film PDF template_
 ![INPUT_FORMAT](images/Transparent_layout.png)
 
---
+
 
 
 [⬆️ Top](#top)
