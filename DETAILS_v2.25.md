@@ -170,7 +170,7 @@ The workbook also includes lists/dropdowns for common values such as page size, 
 
 
 ![INPUT_FORMAT](images/Input_file.png)
-
+<img src="images/Input_file.png" alt="INPUT_FORMAT" style="border: 1px solid #000; padding: 4px;">
 _Example of PMEG_Input format_
 
 [⬆️ Top](#top)
