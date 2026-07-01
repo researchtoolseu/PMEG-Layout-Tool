@@ -317,7 +317,7 @@ The 6 o'clock tie position is drawn on both posterior wrap edges of the unrolled
 
 After completing the workbook:
 
-1. Save the workbook. When clicking the **Run** button, the workbook is automatically saved. 
+1. Save the workbook. When running the Windows app, by clicking the **Run** button, the workbook is automatically saved. 
 2. Click the **Run** button in Excel, or run the Python script directly.
 3. Open the output folder.
 4. Review the main PDF first.
